@@ -11,7 +11,18 @@
 		951D86EE258A1C9F00D50C8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951D86ED258A1C9F00D50C8F /* ContentView.swift */; };
 		951D86F0258A1CA100D50C8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 951D86EF258A1CA100D50C8F /* Assets.xcassets */; };
 		951D86F3258A1CA100D50C8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 951D86F2258A1CA100D50C8F /* Preview Assets.xcassets */; };
+		951D8702258A1CB400D50C8F /* TestBirdCompanionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951D8701258A1CB400D50C8F /* TestBirdCompanionUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		951D8704258A1CB400D50C8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 951D86E0258A1C9F00D50C8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 951D86E7258A1C9F00D50C8F;
+			remoteInfo = TestBirdCompanion;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		951D86E8258A1C9F00D50C8F /* TestBirdCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestBirdCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,10 +31,20 @@
 		951D86EF258A1CA100D50C8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		951D86F2258A1CA100D50C8F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		951D86F4258A1CA100D50C8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		951D86FF258A1CB400D50C8F /* TestBirdCompanionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestBirdCompanionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		951D8701258A1CB400D50C8F /* TestBirdCompanionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBirdCompanionUITests.swift; sourceTree = "<group>"; };
+		951D8703258A1CB400D50C8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		951D86E5258A1C9F00D50C8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		951D86FC258A1CB400D50C8F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				951D86EA258A1C9F00D50C8F /* TestBirdCompanion */,
+				951D8700258A1CB400D50C8F /* TestBirdCompanionUITests */,
 				951D86E9258A1C9F00D50C8F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				951D86E8258A1C9F00D50C8F /* TestBirdCompanion.app */,
+				951D86FF258A1CB400D50C8F /* TestBirdCompanionUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +92,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		951D8700258A1CB400D50C8F /* TestBirdCompanionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				951D8701258A1CB400D50C8F /* TestBirdCompanionUITests.swift */,
+				951D8703258A1CB400D50C8F /* Info.plist */,
+			);
+			path = TestBirdCompanionUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,6 +121,24 @@
 			productReference = 951D86E8258A1C9F00D50C8F /* TestBirdCompanion.app */;
 			productType = "com.apple.product-type.application";
 		};
+		951D86FE258A1CB400D50C8F /* TestBirdCompanionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 951D8706258A1CB400D50C8F /* Build configuration list for PBXNativeTarget "TestBirdCompanionUITests" */;
+			buildPhases = (
+				951D86FB258A1CB400D50C8F /* Sources */,
+				951D86FC258A1CB400D50C8F /* Frameworks */,
+				951D86FD258A1CB400D50C8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				951D8705258A1CB400D50C8F /* PBXTargetDependency */,
+			);
+			name = TestBirdCompanionUITests;
+			productName = TestBirdCompanionUITests;
+			productReference = 951D86FF258A1CB400D50C8F /* TestBirdCompanionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -100,6 +150,10 @@
 				TargetAttributes = {
 					951D86E7258A1C9F00D50C8F = {
 						CreatedOnToolsVersion = 12.3;
+					};
+					951D86FE258A1CB400D50C8F = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 951D86E7258A1C9F00D50C8F;
 					};
 				};
 			};
@@ -117,6 +171,7 @@
 			projectRoot = "";
 			targets = (
 				951D86E7258A1C9F00D50C8F /* TestBirdCompanion */,
+				951D86FE258A1CB400D50C8F /* TestBirdCompanionUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +183,13 @@
 			files = (
 				951D86F3258A1CA100D50C8F /* Preview Assets.xcassets in Resources */,
 				951D86F0258A1CA100D50C8F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		951D86FD258A1CB400D50C8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +205,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		951D86FB258A1CB400D50C8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				951D8702258A1CB400D50C8F /* TestBirdCompanionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		951D8705258A1CB400D50C8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 951D86E7258A1C9F00D50C8F /* TestBirdCompanion */;
+			targetProxy = 951D8704258A1CB400D50C8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		951D86F5258A1CA100D50C8F /* Debug */ = {
@@ -197,7 +275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -252,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -306,6 +384,44 @@
 			};
 			name = Release;
 		};
+		951D8707258A1CB400D50C8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L8W86DZDY2;
+				INFOPLIST_FILE = TestBirdCompanionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ri.TestBirdCompanionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestBirdCompanion;
+			};
+			name = Debug;
+		};
+		951D8708258A1CB400D50C8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L8W86DZDY2;
+				INFOPLIST_FILE = TestBirdCompanionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ri.TestBirdCompanionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestBirdCompanion;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -323,6 +439,15 @@
 			buildConfigurations = (
 				951D86F8258A1CA100D50C8F /* Debug */,
 				951D86F9258A1CA100D50C8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		951D8706258A1CB400D50C8F /* Build configuration list for PBXNativeTarget "TestBirdCompanionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				951D8707258A1CB400D50C8F /* Debug */,
+				951D8708258A1CB400D50C8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
